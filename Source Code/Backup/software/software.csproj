@@ -1,0 +1,515 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BDDC9368-F126-4CC6-9C79-3E368EE96895}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>software</RootNamespace>
+    <AssemblyName>software</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\animate.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\jquery.fancybox.css" />
+    <Content Include="css\li-scroller.css" />
+    <Content Include="css\slick.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\style2.css" />
+    <Content Include="css\theme-red.css" />
+    <Content Include="css\theme.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="img\niit3.jpg" />
+    <Content Include="img\nu.jpg" />
+    <Content Include="img\nu1.jpg" />
+    <Content Include="img\nu2.JPG" />
+    <Content Include="img\nu3.JPG" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\event.js" />
+    <Content Include="js\found.js" />
+    <Content Include="js\jquery.fancybox.pack.js" />
+    <Content Include="js\jquery.li-scroller.1.0.js" />
+    <Content Include="js\jquery.newsTicker.min.js" />
+    <Content Include="js\lost.js" />
+    <Content Include="js\slick.min.js" />
+    <Content Include="js\wow.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="academicapproval.aspx.cs">
+      <DependentUpon>academicapproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="academicapproval.aspx.designer.cs">
+      <DependentUpon>academicapproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="academicdelete.aspx.cs">
+      <DependentUpon>academicdelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="academicdelete.aspx.designer.cs">
+      <DependentUpon>academicdelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adduser.aspx.cs">
+      <DependentUpon>adduser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adduser.aspx.designer.cs">
+      <DependentUpon>adduser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminacademic.aspx.cs">
+      <DependentUpon>adminacademic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminacademic.aspx.designer.cs">
+      <DependentUpon>adminacademic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admincultural.aspx.cs">
+      <DependentUpon>admincultural.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admincultural.aspx.designer.cs">
+      <DependentUpon>admincultural.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminsports.aspx.cs">
+      <DependentUpon>adminsports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminsports.aspx.designer.cs">
+      <DependentUpon>adminsports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApproveEvent.aspx.cs">
+      <DependentUpon>ApproveEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApproveEvent.aspx.designer.cs">
+      <DependentUpon>ApproveEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApproveFound.aspx.cs">
+      <DependentUpon>ApproveFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApproveFound.aspx.designer.cs">
+      <DependentUpon>ApproveFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApproveFound1.aspx.cs">
+      <DependentUpon>ApproveFound1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApproveFound1.aspx.designer.cs">
+      <DependentUpon>ApproveFound1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovePost.aspx.cs">
+      <DependentUpon>ApprovePost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApprovePost.aspx.designer.cs">
+      <DependentUpon>ApprovePost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovePost1.aspx.cs">
+      <DependentUpon>ApprovePost1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApprovePost1.aspx.designer.cs">
+      <DependentUpon>ApprovePost1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="createevent.aspx.cs">
+      <DependentUpon>createevent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="createevent.aspx.designer.cs">
+      <DependentUpon>createevent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="culturalapproval.aspx.cs">
+      <DependentUpon>culturalapproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="culturalapproval.aspx.designer.cs">
+      <DependentUpon>culturalapproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="culturaldelete.aspx.cs">
+      <DependentUpon>culturaldelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="culturaldelete.aspx.designer.cs">
+      <DependentUpon>culturaldelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default1.aspx.cs">
+      <DependentUpon>Default1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default1.aspx.designer.cs">
+      <DependentUpon>Default1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deleteevent.aspx.cs">
+      <DependentUpon>Deleteevent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deleteevent.aspx.designer.cs">
+      <DependentUpon>Deleteevent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deleteevent1.aspx.cs">
+      <DependentUpon>Deleteevent1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deleteevent1.aspx.designer.cs">
+      <DependentUpon>Deleteevent1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteFound.aspx.cs">
+      <DependentUpon>DeleteFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteFound.aspx.designer.cs">
+      <DependentUpon>DeleteFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deletefound1.aspx.cs">
+      <DependentUpon>Deletefound1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deletefound1.aspx.designer.cs">
+      <DependentUpon>Deletefound1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteFounds.aspx.cs">
+      <DependentUpon>DeleteFounds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteFounds.aspx.designer.cs">
+      <DependentUpon>DeleteFounds.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteLost.aspx.cs">
+      <DependentUpon>DeleteLost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteLost.aspx.designer.cs">
+      <DependentUpon>DeleteLost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteLost1.aspx.cs">
+      <DependentUpon>DeleteLost1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteLost1.aspx.designer.cs">
+      <DependentUpon>DeleteLost1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteLosts.aspx.cs">
+      <DependentUpon>DeleteLosts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteLosts.aspx.designer.cs">
+      <DependentUpon>DeleteLosts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditEvent.aspx.cs">
+      <DependentUpon>EditEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditEvent.aspx.designer.cs">
+      <DependentUpon>EditEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditEvent1.aspx.cs">
+      <DependentUpon>EditEvent1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditEvent1.aspx.designer.cs">
+      <DependentUpon>EditEvent1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Editfoundpost.aspx.cs">
+      <DependentUpon>Editfoundpost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Editfoundpost.aspx.designer.cs">
+      <DependentUpon>Editfoundpost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Editfoundpost1.aspx.cs">
+      <DependentUpon>Editfoundpost1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Editfoundpost1.aspx.designer.cs">
+      <DependentUpon>Editfoundpost1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Editlost.aspx.cs">
+      <DependentUpon>Editlost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Editlost.aspx.designer.cs">
+      <DependentUpon>Editlost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditLost1.aspx.cs">
+      <DependentUpon>EditLost1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditLost1.aspx.designer.cs">
+      <DependentUpon>EditLost1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editprofile.aspx.cs">
+      <DependentUpon>editprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editprofile.aspx.designer.cs">
+      <DependentUpon>editprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Found.aspx.cs">
+      <DependentUpon>Found.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Found.aspx.designer.cs">
+      <DependentUpon>Found.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler1.ashx.cs">
+      <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Profile.aspx.cs">
+      <DependentUpon>Manage_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage_Profile.aspx.designer.cs">
+      <DependentUpon>Manage_Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="removeuser.aspx.cs">
+      <DependentUpon>removeuser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="removeuser.aspx.designer.cs">
+      <DependentUpon>removeuser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site3.Master.cs">
+      <DependentUpon>Site3.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site3.Master.designer.cs">
+      <DependentUpon>Site3.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site4.Master.cs">
+      <DependentUpon>Site4.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site4.Master.designer.cs">
+      <DependentUpon>Site4.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site5.Master.cs">
+      <DependentUpon>Site5.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site5.Master.designer.cs">
+      <DependentUpon>Site5.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site6.Master.cs">
+      <DependentUpon>Site6.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site6.Master.designer.cs">
+      <DependentUpon>Site6.Master</DependentUpon>
+    </Compile>
+    <Compile Include="sportsapproval.aspx.cs">
+      <DependentUpon>sportsapproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sportsapproval.aspx.designer.cs">
+      <DependentUpon>sportsapproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sportsdelete.aspx.cs">
+      <DependentUpon>sportsdelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sportsdelete.aspx.designer.cs">
+      <DependentUpon>sportsdelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="superadmin.aspx.cs">
+      <DependentUpon>superadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="superadmin.aspx.designer.cs">
+      <DependentUpon>superadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fonts\fontawesome-webfont.eot" />
+    <None Include="fonts\fontawesome-webfont.ttf" />
+    <None Include="fonts\fontawesome-webfont.woff" />
+    <None Include="fonts\FontAwesome.otf" />
+    <None Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="adduser.aspx" />
+    <Content Include="ApproveEvent.aspx" />
+    <Content Include="ApproveFound1.aspx" />
+    <Content Include="ApprovePost1.aspx" />
+    <Content Include="Deleteevent1.aspx" />
+    <Content Include="Deletefound1.aspx" />
+    <Content Include="DeleteLost1.aspx" />
+    <Content Include="EditEvent1.aspx" />
+    <Content Include="Editfoundpost1.aspx" />
+    <Content Include="EditLost1.aspx" />
+    <Content Include="editprofile.aspx" />
+    <Content Include="removeuser.aspx" />
+    <Content Include="Site6.Master" />
+    <Content Include="adminsports.aspx" />
+    <Content Include="img\1.jpg" />
+    <Content Include="Site5.Master" />
+    <Content Include="admincultural.aspx" />
+    <Content Include="culturalapproval.aspx" />
+    <Content Include="culturaldelete.aspx" />
+    <Content Include="Site4.Master" />
+    <Content Include="academicapproval.aspx" />
+    <Content Include="academicdelete.aspx" />
+    <Content Include="adminacademic.aspx" />
+    <Content Include="Site3.Master" />
+    <Content Include="ApproveFound.aspx" />
+    <Content Include="DeleteFounds.aspx" />
+    <Content Include="DeleteLosts.aspx" />
+    <Content Include="Handler1.ashx" />
+    <Content Include="ApprovePost.aspx" />
+    <Content Include="Default1.aspx" />
+    <Content Include="Site2.Master" />
+    <Content Include="createevent.aspx" />
+    <Content Include="Deleteevent.aspx" />
+    <Content Include="DeleteFound.aspx" />
+    <Content Include="DeleteLost.aspx" />
+    <Content Include="EditEvent.aspx" />
+    <Content Include="Editfoundpost.aspx" />
+    <Content Include="Editlost.aspx" />
+    <Content Include="Found.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="jqueryUI\css\ui-lightnes\jquery.datepick.css" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Manage_Profile.aspx" />
+    <Content Include="Site1.Master" />
+    <Content Include="sportsapproval.aspx" />
+    <Content Include="sportsdelete.aspx" />
+    <Content Include="superadmin.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52963</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
